@@ -1,8 +1,8 @@
 set nocompatible
 
 " Initialize Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+#runtime bundle/vim-pathogen/autoload/pathogen.vim
+#execute pathogen#infect()
 
 " Enable syntax highlighting
 syntax on
@@ -44,7 +44,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 set incsearch
 set hlsearch
 
-" Map Ctrl+l to clear highlighted searches
+ M"ap Ctrl+l to clear highlighted searches
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Highlight characters behind the 80 chars margin
@@ -65,10 +65,10 @@ map <Leader>n :NERDTreeToggle<CR>
 au FileType make set noexpandtab
 
 " Erlang uses 4 spaces
-au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
+"au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+"au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
@@ -79,16 +79,16 @@ au BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+"au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 " ctrp custom ignores
-let g:ctrlp_custom_ignore = {
+"let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
   \ 'file': '\.exe$\|\.so$\|\.dll\|\.beam$\|\.DS_Store$'
   \ }
 
-let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
-let g:erlangHighlightErrors = 1
+"let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
+"let g:erlangHighlightErrors = 1
