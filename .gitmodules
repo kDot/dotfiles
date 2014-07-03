@@ -1,0 +1,34 @@
+# Core
+[submodule "./filestoMove/.vim/bundle/pathogen"]
+        path = ./filestoMove/.vim/bundle/vim-pathogen
+        url = https://github.com/tpope/vim-pathogen.git
+
+[submodule "./filestoMove/.vim/bundle/ctrlp.vim"]
+        path = ./filestoMove/.vim/bundle/ctrlp.vim
+        url = https://github.com/kien/ctrlp.vim.git
+
+[submodule "./filestoMove/.vim/bundle/ack.vim"]
+        path = ./filestoMove/.vim/bundle/ack.vim
+        url = https://github.com/mileszs/ack.vim.git
+
+[submodule "./filestoMove/.vim/bundle/delimitMate"]
+        path = ./filestoMove/.vim/bundle/delimitMate
+        url = https://github.com/Raimondi/delimitMate.git
+
+[submodule "./filestoMove/.vim/bundle/nerdcommenter"]
+        path = ./filestoMove/.vim/bundle/nerdcommenter
+        url = https://github.com/scrooloose/nerdcommenter.git
+
+[submodule "./filestoMove/.vim/bundle/nerdtree"]
+        path = ./filestoMove/.vim/bundle/nerdtree
+        url = https://github.com/scrooloose/nerdtree.git
+
+[submodule "./filestoMove/.vim/bundle/supertab"]
+        path = ./filestoMove/.vim/bundle/supertab
+        url = https://github.com/ervandew/supertab.git
+
+[submodule "./filestoMove/.vim/bundle/vimerl"]
+        path = ./filestoMove/.vim/bundle/vimerl
+        url = https://github.com/jimenezrick/vimerl.git
+
+
