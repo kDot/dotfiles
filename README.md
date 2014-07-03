@@ -3,6 +3,8 @@ dotfiles
 
 Collection of various config files
 
+Checkout and install with 'cp -r filesToMove/.* ~/'
+
 ## Vim
 
-run ```git submodule init && git submodule update``` before starting vim
+OUTDATED??: run ```git submodule init && git submodule update``` before starting vim
