@@ -9,3 +9,7 @@ compinit -i
 
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+echo "\nCurrent tmux sessions"
+tmux ls | sed 's/^/  /'
+echo "\n"
