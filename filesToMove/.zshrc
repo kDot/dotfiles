@@ -12,4 +12,6 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 echo "\nCurrent tmux sessions"
 tmux ls | sed 's/^/  /'
+echo "New Session: tmux new -s 123"
+echo "Use Session: tmux attach -t 123"
 echo "\n"
