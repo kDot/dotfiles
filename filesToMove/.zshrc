@@ -1,7 +1,9 @@
-export ZSH=~/.zsh
-
 # Load all of the config files in ~/oh-my-zsh that end in .zsh
-for config_file ($ZSH/lib/*.zsh) source $config_file
+for config_file (~/.zsh/lib/*.zsh) source $config_file
+
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
 
 # Load and run compinit
 autoload -U compinit

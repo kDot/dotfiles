@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git submodule init 
-git submodule update
 cp -r filesToMove/.vim ~/
 cp -r filesToMove/.vimrc ~/
 cp -r filesToMove/.zsh ~/
